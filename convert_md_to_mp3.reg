@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\.md\shell\ConvertToMP3]
+@="Convert to MP3"
+
+[HKEY_CLASSES_ROOT\.md\shell\ConvertToMP3\command]
+@="wsl python /home/chan/projects/coqui-tts/convert_md_to_mp3.py \"%1\"" 
