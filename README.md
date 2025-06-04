@@ -1,3 +1,50 @@
+# Markdown to MP3 Converter
+
+## Why I Created This
+
+As a student of finance and quantitative development, I needed an efficient way to consume large amounts of information in various formats. This tool was born out of that need - a simple way to convert my markdown study notes into audio files that I can listen to while commuting, exercising, or doing other activities.
+
+The key features that make this tool particularly useful:
+- **Right-click Integration**: Simply right-click any markdown file in Windows Explorer to convert it to MP3
+- **High-Quality TTS**: Uses Coqui TTS for natural-sounding speech synthesis
+- **Markdown Cleaning**: Automatically removes code blocks, links, and other markdown syntax for cleaner audio
+- **Chunking**: Intelligently splits long text into manageable chunks for better processing
+- **WSL Integration**: Works seamlessly with Windows Subsystem for Linux
+
+This tool has been particularly helpful for:
+- Converting study notes to audio for multi-modal learning
+- Creating audio versions of technical documentation
+- Making long-form content more accessible
+- Learning on the go
+
+## Requirements
+
+- Windows 10/11 with WSL2 (Ubuntu) installed
+- Python 3.8 or higher
+- ffmpeg installed in WSL
+- PowerShell 5.1 or higher
+
+## Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone git@github.com:cinthisone/markdown-to-mp3.git
+   cd markdown-to-mp3
+   ```
+
+2. **Set Up Python Environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   ```
+
+3. **Install ffmpeg in WSL**
+   ```bash
+   sudo apt update
+   sudo apt install ffmpeg
+   ```
+
 ## Windows PowerShell Integration
 
 To integrate the script with Windows Explorer's context menu, follow these steps:
